@@ -8,13 +8,7 @@ CORS(app)
 def hello():
     return jsonify({"message": "Hello, World!"})
 
-@app.route('/bye', methods=['GET'])
-def bye():
-    return jsonify({"message": "Good Bye"})
 
-@app.route('/foo', methods=['GET'])
-def foo():
-    return jsonify({"message": "Fooziman"})
 
 @app.route('/users', methods=['GET'])
 def users():
